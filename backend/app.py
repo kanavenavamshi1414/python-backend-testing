@@ -7,10 +7,10 @@ CORS(app)
 
 # Database Configuration
 db_config = {
-    'host': 'database-1.c0te2kwm8fcz.us-east-1.rds.amazonaws.com',
+    'host': 'dev-test.c7uu8saq0zah.eu-north-1.rds.amazonaws.com',
     'user': 'admin',
-    'password': 'Cloud123',
-    'database': 'dev'
+    'password': 'Vamshi#147',
+    'database': 'dev-test'
 }
 
 # Connect to MySQL
