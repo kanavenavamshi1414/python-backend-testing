@@ -24,7 +24,7 @@ server {
     listen 80;
     server_name _;
 
-    # 🔥 Proxy users endpoints directly
+    # Proxy API requests to backend
     location /users {
         proxy_pass http://172.31.27.126:5000;
         proxy_http_version 1.1;
@@ -37,7 +37,7 @@ server {
         proxy_redirect off;
     }
 
-    # React / HTML frontend
+    # Frontend files
     root /usr/share/nginx/html;
     index index.html;
 
