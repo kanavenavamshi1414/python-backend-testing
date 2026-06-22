@@ -8,6 +8,14 @@ app.secret_key = "supersecretkey"
 BACKEND_API = "http://backend-alb-965546045.eu-north-1.elb.amazonaws.com"
 
 
+# =========================
+# HEALTH CHECK (ADDED - IMPORTANT)
+# =========================
+@app.route("/health", methods=["GET"])
+def health():
+    return "OK", 200
+
+
 @app.route("/", methods=["GET"])
 def index():
     try:
@@ -48,7 +56,10 @@ def add_user():
 @app.route("/delete-user/<int:user_id>", methods=["POST"])
 def delete_user(user_id):
     try:
-        response = requests.delete(f"{BACKEND_API}/users/delete/{user_id}", timeout=5)
+        response = requests.delete(
+            f"{BACKEND_API}/users/delete/{user_id}",
+            timeout=5
+        )
 
         if response.status_code == 200:
             return jsonify(status="success", message="User deleted successfully!")
