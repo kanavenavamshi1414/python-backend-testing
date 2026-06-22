@@ -26,17 +26,17 @@ CACHE_TTL = 90
 # =========================
 
 db_write_config = {
-    'host': 'dev.c7uu8saq0zah.eu-north-1.rds.amazonaws.com',
+    'host': 'private-database.c7uu8saq0zah.eu-north-1.rds.amazonaws.com',
     'user': 'admin',
     'password': 'Vamshi#147',
-    'database': 'dev'
+    'database': 'private-database'
 }
 
 db_read_config = {
-    'host': 'dev-read.c7uu8saq0zah.eu-north-1.rds.amazonaws.com ',
+    'host': 'private-reader.c7uu8saq0zah.eu-north-1.rds.amazonaws.com',
     'user': 'admin',
     'password': 'Vamshi#147',
-    'database': 'dev'
+    'database': 'private-reader'
 }
 
 # =========================
