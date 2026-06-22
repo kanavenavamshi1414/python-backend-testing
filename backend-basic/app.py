@@ -18,7 +18,7 @@ CORS(app, origins=["https://kanavena.shop"])
 db_write_config = {
     'host': 'private-database.c7uu8saq0zah.eu-north-1.rds.amazonaws.com',
     'user': 'admin',
-    'password': 'Cloud123',
+    'password': 'Vamshi#147',
     'database': 'private-database'
 }
 
@@ -26,7 +26,7 @@ db_write_config = {
 db_read_config = {
     'host': 'private-reader.c7uu8saq0zah.eu-north-1.rds.amazonaws.com',
     'user': 'admin',
-    'password': 'Cloud123',
+    'password': 'Vamshi#147',
     'database': 'private-reader'
 }
 
